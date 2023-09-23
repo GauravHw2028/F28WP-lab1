@@ -139,7 +139,12 @@ main h3 {
     padding: 20px;
     background-color: #507bf2;
     margin-top: 30px;
-    font-size: larger;
+    
+}
+
+.cta-container h2{
+    color: white;
+    font-size: 3rem;
 }
 
 .cta-button {
@@ -188,3 +193,4 @@ footer a:hover {
 footer p {
     margin: 10px 0 0;
 }
+
