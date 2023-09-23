@@ -136,10 +136,10 @@ main h3 {
 /* Call to Action Styles */
 .cta-container {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     background-color: #939bb1;
-    margin-top: 30px;
-    
+    margin-top: 20px;
+    margin: 10px; 
 }
 
 .cta-container h2{
