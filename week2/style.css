@@ -143,9 +143,17 @@ main h3 {
 }
 
 .cta-container h2{
-    color: white;
-    font-size: 3rem;
-    font-style: bold;
+    color: whitesmoke;
+    font-size: 3.5rem;
+    font-style:oblique;
+    text-shadow: #424651 3px 3px;
+}
+
+.cta-container p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 2px 2px grey;
 }
 
 
