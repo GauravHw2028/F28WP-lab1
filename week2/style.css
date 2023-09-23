@@ -147,6 +147,7 @@ main h3 {
     font-size: 3.5rem;
     font-style:oblique;
     text-shadow: #424651 3px 3px;
+    text-transform: uppercase;
 }
 
 .cta-container p {
