@@ -219,10 +219,13 @@ footer p {
 /* Style for the form: setting width, auto margin for centering, padding,
 background color, border radius for rounded corners, and font size */
 #form {
-    width: 300px;
-    margin: 20vh auto 0 auto; /* This centers the form vertically and
+    width: 500px;
+    margin: 5vh auto 0 auto; /* This centers the form vertically and
     horizontally */
-    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
     background-color: whitesmoke; /* Light gray background for the form */
     border-radius: 4px; /* Rounded corners for the form */
     font-size: 12px;
