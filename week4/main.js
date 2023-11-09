@@ -37,4 +37,3 @@ cityContainer.insertAdjacentHTML('beforeend' , htmlString);
 }
 
 
-//https://GauravHw2028.github.io/F28WP-lab1/cities1.json
