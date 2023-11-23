@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const { promisify } = require('util');
 const mysql = require('mysql');
-//const e = require('express');
 const db = mysql.createConnection({
     host : process.env.DATABASE_HOST,
     user : process.env.DATABASE_USER,
@@ -10,7 +9,7 @@ const db = mysql.createConnection({
     database : process.env.DATABASE
 });
 
-//function of login
+
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -50,7 +49,7 @@ exports.login = async (req, res) => {
     }
 };
 
-//function of register
+
 exports.register = (req, res) => {
     console.log(req.body);
 
@@ -83,10 +82,10 @@ exports.register = (req, res) => {
         });
     });
 
-    //res.send("Form submitted");
+   
 };
 
-//function of logout
+
 exports.logout = async (req, res) => {
     res.cookie('jwt', 'logout', {
         expires: new Date(Date.now() + 2*1000),
@@ -101,11 +100,11 @@ exports.isLoggedIn = async (req, res, next) => {
   console.log(req.cookies);
   if(req.cookies.jwt) {
     try {
-      //1) verify the token
+      
       const decoded = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRET);
       console.log(decoded);
 
-      //2) Check if the user still exists
+      
       db.query('SELECT * FROM users WHERE id = ?', [decoded.id], (error, result) => {
         try {
           console.log(result);
